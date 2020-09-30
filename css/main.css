@@ -33,17 +33,29 @@ header {
   margin-bottom: 1.5rem;
 }
 
-main h3 {
+main h2 {
   text-align: center;
   margin-top: 1rem;
   padding: 0 1rem;
 }
 
-main p {
+.intro-info p {
   text-align: center;
   margin-top: .5rem;
   margin-bottom: 2rem;
   padding: 0 1rem;
+}
+
+.header-ja {
+  margin: 0;
+  display: block;
+}
+
+.header-en {
+  font-size: 1.125rem;
+  margin: 0;
+  font-style: normal;
+  display: block;
 }
 
 h1 {
@@ -51,23 +63,18 @@ h1 {
 }
 
 h2 {
-  margin: 0;
-  font-size: 1.125rem;
-}
-
-h3 {
   font-size: 2rem;
   margin: 0;
   font-weight: normal;
 }
 
-h4 {
+h3 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
 
-h5 {
+h4 {
   margin-top: 0;
 }
 
@@ -100,15 +107,15 @@ i {
   margin: 0;
 }
 
-div {
+article {
   margin-bottom: 1.5rem;
 }
 
-div p {
+article p {
   margin-bottom: 1.5rem;
 }
 
-div a {
+article a {
   display: flex;
   text-decoration: none;
   border: .2rem solid #3783a3;
@@ -173,7 +180,7 @@ footer {
     padding: 0;
   }
 
-  main {
+  .intro-info {
     max-width: 30em;
     position: relative;
     left: 50%;
@@ -184,10 +191,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
-  }
-
-  .cards a {
-    justify-content: flex-end;
   }
 
 }
