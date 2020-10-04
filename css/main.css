@@ -22,7 +22,10 @@ body {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem .5rem;
 }
 
 .banner-text {
@@ -39,6 +42,12 @@ main h2 {
   padding: 0 1rem;
 }
 
+
+.intro-info {
+  border-top: .2rem solid #e2e2e2;
+  border-bottom: .2rem solid #e2e2e2;
+}
+
 .intro-info p {
   text-align: center;
   margin-top: .5rem;
@@ -48,18 +57,21 @@ main h2 {
 
 .header-ja {
   margin: 0;
-  display: block;
 }
 
 .header-en {
   font-size: 1.125rem;
   margin: 0;
   font-style: normal;
-  display: block;
 }
 
 h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
   margin: 0;
+  padding: 0 1rem;
 }
 
 h2 {
@@ -109,6 +121,9 @@ i {
 
 article {
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 article p {
@@ -116,18 +131,11 @@ article p {
 }
 
 article a {
-  display: flex;
   text-decoration: none;
   border: .2rem solid #3783a3;
   padding: .5em;
   border-radius: .3rem;
   width: 100%;
-}
-
-hr {
-  height: .2rem;
-  background-color: #e2e2e2;
-  border: none;
 }
 
 img {
@@ -137,12 +145,18 @@ img {
 
 footer {
   text-align: center;
+  padding: 1rem;
+  border-top: .2rem solid #e2e2e2;
 }
 
 @media only screen and (min-width: 38em) {
 
   body {
     position: absolute;
+  }
+
+  h1 {
+    align-items: flex-start;
   }
 
   section {
@@ -161,6 +175,10 @@ footer {
     display: flex;
     justify-content: flex-end;
     margin: 0;
+  }
+
+  nav li {
+    padding: 0 .5em;
   }
 
   nav a {
