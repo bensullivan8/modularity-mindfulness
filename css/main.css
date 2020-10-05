@@ -25,7 +25,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem .5rem;
+  padding: 0 .5rem;
 }
 
 .banner-text {
@@ -41,7 +41,6 @@ main h2 {
   margin-top: 1rem;
   padding: 0 1rem;
 }
-
 
 .intro-info {
   border-top: .2rem solid #e2e2e2;
@@ -102,9 +101,10 @@ ul {
   padding: 0 .5em;
 }
 
-li {
+nav li {
   text-decoration: underline;
   list-style-type: none;
+  padding: 0 .5em;
 }
 
 a {
@@ -175,10 +175,6 @@ footer {
     display: flex;
     justify-content: flex-end;
     margin: 0;
-  }
-
-  nav li {
-    padding: 0 .5em;
   }
 
   nav a {
